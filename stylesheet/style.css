@@ -74,4 +74,13 @@ input::placeholder{
 .review :has(button).content{
     filter: blur(10px);
 }
+video{
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+::cue{
+    background-color: black;
+    font-size: 50px;
+    
+}
 
