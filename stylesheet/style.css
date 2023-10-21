@@ -1,10 +1,29 @@
+/* *{
+    justify-items: center;
+    margin: auto;
+    margin-left: 100px;
+} */
 .container{
     width: 500px;
     height: 500px;
     background-color: rebeccapurple;
-    clip-path: circle(50% at 0 0);
+    clip-path: polygon(45% 0, 100% 22%, 100% 92%, 0% 100%, 0 53%, 0 18%);
     transition: all 2s ease;
 }
 .container:hover{
-    clip-path: circle(100%);
+    clip-path: polygon(5% 20%, 70% 22%, 50% 92%, 0% 10%, 0 53%, 0 18%);
+}
+
+.frame{
+    width: 500px;
+    height: 500px;
+    border: 3px solid rebeccapurple;
+    perspective: 200px;
+}
+.shape{
+    width: 500px;
+    height: 500px;
+    background-color: lightblue;
+    transform: rotateY(45deg);
+    transition: all 3s ease;
 }
