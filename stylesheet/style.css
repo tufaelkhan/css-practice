@@ -50,7 +50,28 @@ img:active{
 }
 input{
     padding: 20px;
+    border: 1px solid red;
+    caret-color: red;
 }
 input:focus{
-    outline: none;
+    outline: 1px solid red;
 }
+input::placeholder{
+    color: red;
+}
+
+/* .item h1, 
+.item h2,
+.item h3,
+.item p{
+    color: purple;
+} */
+
+.item :not(h1, h2){
+    color: red;
+}
+
+.review :has(button).content{
+    filter: blur(10px);
+}
+
